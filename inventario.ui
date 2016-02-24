@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-color: #ffffff;
+}
+QLineEdit{
+background-color: #5EBDB2;
+border-radius: 5px;
+color: #ffffff;
+}
+QListWidget{
+background-color: #c8e5e3;
+border-radius: 10px;
+}
+QLabel{
+color: #142b3b;
+}
+QGroupBox{
+color: #1792a4;
+border-radius: 10px;
+background-color: #e8e8e7;
+}
+QPushButton{
+ 	background-color: #142b3b;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 13px;
+    min-width: 7em;
+    padding: 3px;
+	color:#c8e5e3;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>&quot;Call Me&quot;, (Maybe)?</family>
+      <pointsize>19</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Inventario</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>150</y>
+      <width>531</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lucida Grande</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>                                                      Mes - Total</string>
+    </property>
+    <widget class="QListWidget" name="lista">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>531</width>
+       <height>341</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>261</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lucida Grande</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>     Selecciona el mes y el año:</string>
+    </property>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>104</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>40</y>
+       <width>104</width>
+       <height>26</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="todo">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>90</y>
+      <width>141</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Todo</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buscar">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>60</y>
+      <width>141</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>639</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>&quot;Call Me&quot;, (Maybe)?</family>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuRegistro">
+    <property name="title">
+     <string>Registro</string>
+    </property>
+    <addaction name="registro"/>
+   </widget>
+   <widget class="QMenu" name="menuClientes">
+    <property name="title">
+     <string>Clientes</string>
+    </property>
+    <addaction name="facturas"/>
+    <addaction name="consultar"/>
+   </widget>
+   <widget class="QMenu" name="inventario">
+    <property name="title">
+     <string>Inventario</string>
+    </property>
+   </widget>
+   <addaction name="menuRegistro"/>
+   <addaction name="menuClientes"/>
+   <addaction name="inventario"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="font">
+    <font>
+     <family>&quot;Call Me&quot;, (Maybe)?</family>
+    </font>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionCrear_tarjeta">
+   <property name="text">
+    <string>Crear tarjeta</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>&quot;Call Me&quot;, (Maybe)?</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionFacturas">
+   <property name="text">
+    <string>Lista mes</string>
+   </property>
+  </action>
+  <action name="facturas">
+   <property name="text">
+    <string>Cobros y facturas</string>
+   </property>
+  </action>
+  <action name="consultar">
+   <property name="text">
+    <string>Consultar</string>
+   </property>
+  </action>
+  <action name="registro">
+   <property name="text">
+    <string>Registrar</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
